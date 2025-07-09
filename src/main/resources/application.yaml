@@ -1,0 +1,8 @@
+quarkus:
+  cxf:
+    path: /soap
+    endpoint:
+      "/startjob":
+        implementor: nl.cge.b2z.orkestrator.boundary.JobStartServiceImpl
+        logging:
+          enabled: pretty

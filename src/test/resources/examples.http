@@ -1,0 +1,18 @@
+### SOAP WSDL
+GET http://localhost:8080/soap/startjob?wsdl
+
+
+### SOAP request to startJob
+POST http://localhost:8080/soap/startjob
+Content-Type: text/xml;charset=UTF-8
+SOAPAction: ""
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:ns="http://boundary.orkestrator.b2z.cge.nl/">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <ns:startJob>
+            <arg0>123</arg0> <!-- Pas dit aan naar de gewenste job-ID -->
+        </ns:startJob>
+    </soapenv:Body>
+</soapenv:Envelope>
